@@ -1,0 +1,17 @@
+{
+  "name": "yaml-frontmatter-parser",
+  "version": "0.1.0",
+  "description": "Extracts the YAML frontmatter block from a markdown or text document and returns the parsed metadata and the remaining content separately.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "BSD-3-Clause",
+  "dependencies": {}
+}
