@@ -50,3 +50,10 @@ Values are coerced as follows: `true`/`false` become booleans, `null` and `~` an
 ```
 node --test
 ```
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
